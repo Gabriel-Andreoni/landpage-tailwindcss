@@ -468,8 +468,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .col-span-3 {
@@ -586,23 +602,6 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: heroApAnimate 1s ease;
 }
 
-@-webkit-keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
-@keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
-.animate-pulse {
-  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -641,9 +640,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
-.bg-sky-400 {
+.bg-green-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
 .bg-slate-400 {
@@ -651,16 +650,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
+.bg-sky-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+}
+
+.bg-sky-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\/images\/background-hero\.png\'\)\] {
   background-image: url('../images/background-hero.png');
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .py-4 {
@@ -681,6 +690,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 3rem;
 }
 
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pr-1 {
+  padding-right: 0.25rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -693,16 +718,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: "KoHo";
 }
 
-.text-fontPadrao {
-  font-size: 1.5em;
+.text-\[1\.8em\] {
+  font-size: 1.8em;
+}
+
+.text-\[5em\] {
+  font-size: 5em;
+}
+
+.text-\[2em\] {
+  font-size: 2em;
 }
 
 .text-\[1\.5em\] {
   font-size: 1.5em;
-}
-
-.text-\[1\.8em\] {
-  font-size: 1.8em;
 }
 
 .text-slate-900 {
@@ -713,6 +742,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-slate-50 {
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity));
+}
+
+.text-sky-400 {
+  --tw-text-opacity: 1;
+  color: rgb(56 189 248 / var(--tw-text-opacity));
 }
 
 .duration-300 {
@@ -742,6 +776,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .after\:w-full::after {
   content: var(--tw-content);
   width: 100%;
+}
+
+@-webkit-keyframes pulse {
+  50% {
+    content: var(--tw-content);
+    opacity: .5;
+  }
 }
 
 @keyframes pulse {
@@ -779,6 +820,10 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+.hover\:border-\[1px\]:hover {
+  border-width: 1px;
+}
+
 .hover\:border-sky-400:hover {
   --tw-border-opacity: 1;
   border-color: rgb(56 189 248 / var(--tw-border-opacity));
@@ -789,9 +834,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(56 189 248 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-transparent:hover {
+  background-color: transparent;
+}
+
 .hover\:text-slate-50:hover {
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity));
+}
+
+.hover\:text-slate-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 .hover\:transition:hover {
@@ -866,16 +920,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 75%;
   }
 
+  .desktop\:w-2\/4 {
+    width: 50%;
+  }
+
   .desktop\:text-hero {
     font-size: 5em;
-  }
-
-  .desktop\:text-\[1\.5em\] {
-    font-size: 1.5em;
-  }
-
-  .desktop\:text-\[2em\] {
-    font-size: 2em;
   }
 
   .desktop\:text-\[1\.6em\] {
