@@ -14,12 +14,12 @@
 
 <body class="grid grid-cols-3 grid-row[150px auto auto] bg-slate-100">
     <header
-        class="col-start-1 col-end-4 w-full h-[150px] flex items-center animate-[heroImgAnimate_1s_ease] desktop:justify-evenly desktop:gap-[15em]">
+        class="col-start-1 col-end-4 w-full h-[150px] flex items-center animate-[heroImgAnimate_1s_ease] desktop:justify-evenly desktop:gap-[10em]">
         <img class="celular:hidden tablet:hidden laptop:block laptop:animate-[heroImgAnimate_1s_ease]"
             src="../images/logo.png" alt="logo da empresa" width="300">
         <nav
             class="h-auto pr-12 celular:p-0 celular:w-full celular:flex celular:justify-center desktop:inline-block desktop:w-[30%]">
-            <ul class="flex gap-20 celular:gap-10 tablet:flex tablet:justify-center">
+            <ul class="flex celular:gap-2 desktop:gap-10  tablet:flex tablet:justify-center">
                 <li
                     class="font-fontHeroLight text-[1.8em] text-slate-900 relative after:block after:contetn-[''] after:absolute after:w-full after:h-2 after:bg-sky-400 after:rounded-[.25em] cursor-pointer after:animate-pulse">
                     <a href="#">Home</a>
@@ -66,15 +66,15 @@
             </section>
         </div>
 
-        <div class="w-full h-screen flex flex-col justify-center bg-slate-50" id="servicos">
+        <div class="w-full h-screen flex flex-col flex-wrap justify-center bg-slate-50 celular:h-[100%] desktop:h-screen" id="servicos">
             <section>
                 <h1>
                     lOREM LOREM LOREM
                 </h1>
             </section>
 
-            <section class="flex gap-2 p-8">
-                <div class="w-[25%] h-[370px] m-auto border-sky-400 border-[1px] border-t-8 rounded-[.25em] animate-[heroImgAnimate_.5s_ease]">
+            <section class="flex celular:flex-col desktop:flex-row gap-2 p-8">
+                <div class="h-[370px] m-auto border-sky-400 border-[1px] border-t-8 rounded-[.25em] animate-[heroImgAnimate_.5s_ease] celular:w-full desktop:w-[25%]">
                     <section class="p-4">
                         <img class="" src="../images/pessoal-img.png" alt="">
 
@@ -89,7 +89,7 @@
                     </section>
                 </div>
 
-                <div class="w-[25%] h-[370px]  m-auto border-sky-400 border-[1px] border-t-8 rounded-[.25em] animate-[heroImgAnimate_1s_ease]">
+                <div class="celular:w-[100%] desktop:w-[25%] h-[370px]  m-auto border-sky-400 border-[1px] border-t-8 rounded-[.25em] animate-[heroImgAnimate_1s_ease]">
                     <section class="p-4">
                         <img src="../images/adm-img.png" alt="">
 
@@ -105,7 +105,7 @@
                 </div>
 
                 <div
-                    class="w-[25%] h-[370px]  m-auto flex flex-col border-sky-400 border-[1px] border-t-8 rounded-[.25em] animate-[heroImgAnimate_1.5s_ease]">
+                    class="celular:w-[100%] desktop:w-[25%] h-[370px]  m-auto flex flex-col border-sky-400 border-[1px] border-t-8 rounded-[.25em] animate-[heroImgAnimate_1.5s_ease]">
                     <section class="p-4">
                         <img src="../images/contabilidade-img.png" alt="">
 
@@ -120,7 +120,7 @@
                     </section>
                 </div>
 
-                <div class="w-[25%] h-[370px]  m-auto border-sky-400 border-[1px] border-t-8 rounded-[.25em] animate-[heroImgAnimate_2s_ease]">
+                <div class="celular:w-[100%] desktop:w-[25%] h-[370px]  m-auto border-sky-400 border-[1px] border-t-8 rounded-[.25em] animate-[heroImgAnimate_2s_ease]">
                     <section class="p-4">
                         <img src="../images/fiscal-img.png" alt="">
 
@@ -138,7 +138,7 @@
         </div>
     </main>
 
-    <footer class="col-start-1 col-end-4 h-auto bg-slate-400">
+    <footer class="col-start-1 col-end-4 h-full bg-slate-400">
         rodape
     </footer>
 

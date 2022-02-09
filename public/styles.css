@@ -560,6 +560,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 370px;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -770,6 +778,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -1043,8 +1055,36 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
+  .celular\:h-full {
+    height: 100%;
+  }
+
+  .celular\:h-\[\] {
+    height: ;
+  }
+
+  .celular\:h-\[100\%\] {
+    height: 100%;
+  }
+
+  .celular\:h-screen {
+    height: 100vh;
+  }
+
   .celular\:w-full {
     width: 100%;
+  }
+
+  .celular\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .celular\:flex-row {
+    flex-direction: row;
+  }
+
+  .celular\:flex-col {
+    flex-direction: column;
   }
 
   .celular\:justify-center {
@@ -1053,6 +1093,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .celular\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .celular\:gap-4 {
+    gap: 1rem;
+  }
+
+  .celular\:gap-2 {
+    gap: 0.5rem;
   }
 
   .celular\:p-0 {
@@ -1142,6 +1190,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: inline-block;
   }
 
+  .desktop\:h-screen {
+    height: 100vh;
+  }
+
   .desktop\:w-\[30\%\] {
     width: 30%;
   }
@@ -1150,12 +1202,32 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 50%;
   }
 
+  .desktop\:w-\[25\%\] {
+    width: 25%;
+  }
+
+  .desktop\:flex-row {
+    flex-direction: row;
+  }
+
   .desktop\:justify-evenly {
     justify-content: space-evenly;
   }
 
   .desktop\:gap-\[15em\] {
     gap: 15em;
+  }
+
+  .desktop\:gap-20 {
+    gap: 5rem;
+  }
+
+  .desktop\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .desktop\:gap-\[10em\] {
+    gap: 10em;
   }
 
   .desktop\:text-hero {
