@@ -12,53 +12,133 @@
     <title>Document</title>
 </head>
 
-<body class="grid grid-col[33.33% 33.33% 33.33%] grid-row[150px auto auto] bg-slate-100">
+<body class="grid grid-cols-3 grid-row[150px auto auto] bg-slate-100">
     <header
-        class="col-span-3 h-[150px] flex justify-between gap-20  items-center animate-[heroImgAnimate_1s_ease] celular:justify-center tablet:justify-between">
-        <img class="pl-8 celular:hidden tablet:block laptop:block" src="../images/logo.png" alt="logo da empresa"
-            width="300">
-        <nav class="h-auto pr-12 celular:p-0 celular:w-2/4">
-            <ul class="flex gap-20">
+        class="col-start-1 col-end-4 w-full h-[150px] flex items-center animate-[heroImgAnimate_1s_ease] desktop:justify-evenly desktop:gap-[15em]">
+        <img class="celular:hidden tablet:hidden laptop:block laptop:animate-[heroImgAnimate_1s_ease]"
+            src="../images/logo.png" alt="logo da empresa" width="300">
+        <nav
+            class="h-auto pr-12 celular:p-0 celular:w-full celular:flex celular:justify-center desktop:inline-block desktop:w-[30%]">
+            <ul class="flex gap-20 celular:gap-10 tablet:flex tablet:justify-center">
                 <li
                     class="font-fontHeroLight text-[1.8em] text-slate-900 relative after:block after:contetn-[''] after:absolute after:w-full after:h-2 after:bg-sky-400 after:rounded-[.25em] cursor-pointer after:animate-pulse">
-                    Home</li>
+                    <a href="#">Home</a>
+                </li>
                 <li
                     class="font-fontHeroLight text-[1.8em] text-slate-900 relative after:block after:contetn-[''] after:absolute after:w-full after:h-2 after:bg-sky-400 after:rounded-[.25em] after:invisible hover:after:visible hover:animate-pulse cursor-pointer ">
-                    Produtos</li>
+                    <a href="#servicos">Serviços</a>
+                </li>
                 <li
                     class="font-fontHeroLight text-[1.8em] text-slate-900 relative after:block after:contetn-[''] after:absolute after:w-full after:h-2 after:bg-sky-400 after:rounded-[.25em] after:invisible hover:after:visible hover:animate-pulse cursor-pointer ">
-                    Contato</li>
+                    <a href="">Empresa</a>
+                </li>
+
+                <li
+                    class="font-fontHeroLight text-[1.8em] text-slate-900 relative after:block after:contetn-[''] after:absolute after:w-full after:h-2 after:bg-sky-400 after:rounded-[.25em] after:invisible hover:after:visible hover:animate-pulse cursor-pointer ">
+                    <a href="">Contato</a>
+                </li>
             </ul>
         </nav>
 
-        <span class="absolute top-0 right-0 text-[1.5em] text-sky-400 pr-4" id="horario">
-            <p id="relogio">
-                
+        <span class="inline-block absolute top-0 right-0 text-[1.5em] text-sky-400" id="horario">
+            <p class="inline-block" id="relogio">
+
             </p>
         </span>
     </header>
 
-    <main class="col-span-3 h-auto flex p-2 bg-[url('../images/background-hero.png')]">
+    <main class="col-start-1 col-end-4 h-auto">
+        <div class="flex bg-[url('../images/background-hero.png')]">
+            <section class="w-3/5 h-full flex-col justify-center items-center celular:hidden tablet:flex">
+                <img class="animate-[heroImgAnimate_1s_ease]" src="../images/hero-img.png" alt="imagem de apresentação"
+                    width="600">
+            </section>
+            <section class="w-3/5 h-full flex flex-col justify-center items-center p-8 celular:p-0 celular:w-full">
+                <h1
+                    class="inline-block font-fontHero text-center  text-slate-900 mb-10 animate-[heroApAnimate_1s_ease] celular:text-[2.5em] laptop:text-[3em] desktop:text-hero">
+                    <span class="bg-sky-400 text-slate-50 p-2 rounded-[.25em]">Exitus</span> Assessoria Contábil
+                </h1>
+                <h2
+                    class="font-fontHeroLight  text-slate-900 text-center animate-[heroApAnimate_1s_ease] celular:text-[1.3em] desktop:text-[1.6em]">
+                    Assessoria Empresarial, Jurídica, Tributária e Contabilidade</h2>
+                <button
+                    class="border-[1px] bg-sky-400 mt-8 py-4 px-8 font-fontHeroLight text-[1.8em] text-slate-50 rounded-[.25em] hover:border-[1px] hover:border-sky-400 hover:bg-transparent hover:text-slate-900 hover:transition duration-300 animate-[heroApAnimate_1s_ease] celular:w-full tablet:w-2/4 laptop:w-3/4 desktop:w-2/4">Conheça-nos</button>
+            </section>
+        </div>
 
-        <section class="w-3/5 h-full flex-col justify-center items-center celular:hidden tablet:flex">
-            <img class="animate-[heroImgAnimate_1s_ease]" src="../images/hero-img.png" alt="imagem de apresentação"
-                width="600">
-        </section>
+        <div class="w-full h-screen flex flex-col justify-center bg-slate-50" id="servicos">
+            <section>
+                <h1>
+                    lOREM LOREM LOREM
+                </h1>
+            </section>
 
-        <section class="w-3/5 h-full flex flex-col justify-center items-center p-8 celular:p-0 celular:w-full">
-            <h1
-                class="inline-block font-fontHero text-center  text-slate-900 mb-10 animate-[heroApAnimate_1s_ease] celular:text-[2.5em] laptop:text-[3em] desktop:text-hero">
-                <span class="bg-sky-400 text-slate-50 p-2 rounded-[.25em]">Exitus</span> Assessoria Contábil
-            </h1>
-            <h2 class="font-fontHeroLight  text-slate-900 text-center animate-[heroApAnimate_1s_ease] celular:text-[1.3em] desktop:text-[1.6em]">
-                Assessoria Empresarial, Jurídica, Tributária e Contabilidade</h2>
+            <section class="flex gap-2 p-8">
+                <div class="w-[25%] h-[350px] m-auto border-sky-400 border-[1px] rounded-[.25em] animate-[heroImgAnimate_.5s_ease]">
+                    <section class="p-4">
+                        <img class="" src="../images/pessoal-img.png" alt="">
 
-            <button
-                class="border-[1px] bg-sky-400 mt-8 py-4 px-8 font-fontHeroLight text-[1.8em] text-slate-50 rounded-[.25em] hover:border-[1px] hover:border-sky-400 hover:bg-transparent hover:text-slate-900 hover:transition duration-300 animate-[heroApAnimate_1s_ease] celular:w-full tablet:w-2/4 laptop:w-3/4 desktop:w-2/4">Conheça-nos</button>
-        </section>
+                        <h1 class="font-fontHeroLight text-[1.4em] border-b-2">Departamento Pessoal</h1>
+                    </section>
+
+                    <section class="pl-4 pr-4">
+                        <p class="font-fontHeroLight text-[1.1em]">Departamento responsável pela gestão dos funcionários</p>
+                        <button class="w-[50%] p-[.6em] border-[1px] border-sky-400 rounded-[.25em] relative left-[45%] mt-[5em] hover:bg-sky-400 hover:text-slate-50 hover:transition duration-300">
+                            Saiba Mais
+                        </button>
+                    </section>
+                </div>
+
+                <div class="w-[25%] h-[350px]  m-auto border-sky-400 border-[1px] rounded-[.25em] animate-[heroImgAnimate_1s_ease]">
+                    <section class="p-4">
+                        <img src="../images/adm-img.png" alt="">
+
+                        <h1 class="font-fontHeroLight text-[1.4em] border-b-2">Departamento Administrativo</h1>
+                    </section>
+
+                    <section class="pl-4 pr-4">
+                        <p class="font-fontHeroLight text-[1.1em]">Departamento que abrange todos os profissionais responsáveis da empresa.</p>
+                        <button class="w-[50%] p-[.6em] border-[1px] border-sky-400 rounded-[.25em] relative left-[40%] mt-[3.3em] hover:bg-sky-400 hover:text-slate-50 hover:transition duration-300">
+                            Saiba Mais
+                        </button>
+                    </section>
+                </div>
+
+                <div
+                    class="w-[25%] h-[350px]  m-auto flex flex-col border-sky-400 border-[1px] rounded-[.25em] animate-[heroImgAnimate_1.5s_ease]">
+                    <section class="p-4">
+                        <img src="../images/contabilidade-img.png" alt="">
+
+                        <h1 class="font-fontHeroLight text-[1.4em] border-b-2">Departamento Contabilidade</h1>
+                    </section>
+
+                    <section class="pl-4 pr-4">
+                        <p class="font-fontHeroLight text-[1.1em]">Departamento responsável pelo registro e avaliação das informações econômicas e financeiras de sua empresa.</p>
+                        <button class="w-[50%] p-[.6em] border-[1px] border-sky-400 rounded-[.25em] relative left-[40%] mt-[1.7em] hover:bg-sky-400 hover:text-slate-50 hover:transition duration-300">
+                            Saiba Mais
+                        </button>
+                    </section>
+                </div>
+
+                <div class="w-[25%] h-[350px]  m-auto border-sky-400 border-[1px] rounded-[.25em] animate-[heroImgAnimate_2s_ease]">
+                    <section class="p-4">
+                        <img src="../images/fiscal-img.png" alt="">
+
+                        <h1 class="font-fontHeroLight text-[1.4em] border-b-2">Departamento Fiscal</h1>
+                    </section>
+
+                    <section class="pl-4 pr-4">
+                        <p class="font-fontHeroLight text-[1.1em]">Setor responsável por fazer a escrituração de todas as movimentações, apurar impostos e garantir que todas as obrigações legais estão sendo cumpridas</p>
+                        <button class="w-[50%] p-[.6em] border-[1px] border-sky-400 rounded-[.25em] relative left-[40%] hover:bg-sky-400 hover:text-slate-50 hover:transition duration-300">
+                            Saiba Mais
+                        </button>
+                    </section>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer class="col-span-3 h-auto bg-slate-400">
+    <footer class="col-start-1 col-end-4 h-auto bg-slate-400">
         rodape
     </footer>
 

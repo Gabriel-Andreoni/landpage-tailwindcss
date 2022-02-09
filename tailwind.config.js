@@ -8,6 +8,7 @@ module.exports = {
           '50%': {opacity: '.5'},
           '100%': {transform: 'translateX(0%)', opacity: '1'}
         },
+
         heroApAnimate: {
           '0%': { transform: 'translateY(100%)', opacity: '0' },
           '50%': { opcacity: '.5'},
@@ -16,7 +17,8 @@ module.exports = {
       },
       animation: {
         heroImgAnimate: 'heroImgAnimate 1s ease',
-        heroApAnimate: 'heroApAnimate 1s ease'
+        heroApAnimate: 'heroApAnimate 1s ease',
+        servicosAnimate: 'heroImgAnimate 1s ease'
       },
     },
     fontFamily: {
@@ -39,6 +41,8 @@ module.exports = {
       'celular': '0px',
 
       'tablet': '740px',
+
+      'image-hidden':'742px',
       
       'laptop': '960px',
 

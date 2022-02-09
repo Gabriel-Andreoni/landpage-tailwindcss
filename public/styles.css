@@ -484,8 +484,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
+.left-\[45\%\] {
+  left: 45%;
+}
+
+.left-\[40\%\] {
+  left: 40%;
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-end-4 {
+  grid-column-end: 4;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mb-10 {
@@ -494,6 +510,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-\[5em\] {
+  margin-top: 5em;
+}
+
+.mt-\[3\.3em\] {
+  margin-top: 3.3em;
+}
+
+.mt-\[1\.7em\] {
+  margin-top: 1.7em;
 }
 
 .inline-block {
@@ -520,8 +548,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
+.h-\[350px\] {
+  height: 350px;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .w-3\/5 {
   width: 60%;
+}
+
+.w-\[25\%\] {
+  width: 25%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
 }
 
 @-webkit-keyframes heroImgAnimate {
@@ -598,8 +646,122 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: heroApAnimate 1s ease;
 }
 
+.animate-\[servicosAnimate_1s_ease\] {
+  -webkit-animation: servicosAnimate 1s ease;
+          animation: servicosAnimate 1s ease;
+}
+
+@keyframes heroImgAnimate {
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animate-\[heroImgAnimate_2s_ease\] {
+  -webkit-animation: heroImgAnimate 2s ease;
+          animation: heroImgAnimate 2s ease;
+}
+
+@keyframes heroImgAnimate {
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animate-\[heroImgAnimate_1\.5s_ease\] {
+  -webkit-animation: heroImgAnimate 1.5s ease;
+          animation: heroImgAnimate 1.5s ease;
+}
+
+@keyframes heroImgAnimate {
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animate-\[heroImgAnimate_2\.5s_ease\] {
+  -webkit-animation: heroImgAnimate 2.5s ease;
+          animation: heroImgAnimate 2.5s ease;
+}
+
+@keyframes heroImgAnimate {
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animate-\[heroImgAnimate_\.5s_ease\] {
+  -webkit-animation: heroImgAnimate .5s ease;
+          animation: heroImgAnimate .5s ease;
+}
+
+@keyframes heroImgAnimate {
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animate-\[heroImgAnimate_1\.s_ease\] {
+  -webkit-animation: heroImgAnimate 1.s ease;
+          animation: heroImgAnimate 1.s ease;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -618,12 +780,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .rounded-\[\.25em\] {
   border-radius: .25em;
 }
 
 .border-\[1px\] {
   border-width: 1px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-sky-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(56 189 248 / var(--tw-border-opacity));
 }
 
 .bg-slate-100 {
@@ -636,6 +811,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(56 189 248 / var(--tw-bg-opacity));
 }
 
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
 .bg-slate-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
@@ -645,12 +825,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('../images/background-hero.png');
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
 
-.p-8 {
-  padding: 2rem;
+.p-4 {
+  padding: 1rem;
+}
+
+.p-\[\.6em\] {
+  padding: .6em;
 }
 
 .py-4 {
@@ -663,12 +851,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2rem;
 }
 
-.pl-8 {
-  padding-left: 2rem;
-}
-
 .pr-12 {
   padding-right: 3rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .pr-4 {
@@ -693,6 +881,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[1\.5em\] {
   font-size: 1.5em;
+}
+
+.text-\[1\.4em\] {
+  font-size: 1.4em;
+}
+
+.text-\[1\.1em\] {
+  font-size: 1.1em;
 }
 
 .text-slate-900 {
@@ -794,9 +990,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: transparent;
 }
 
+.hover\:bg-sky-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+}
+
 .hover\:text-slate-900:hover {
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.hover\:text-slate-50:hover {
+  --tw-text-opacity: 1;
+  color: rgb(248 250 252 / var(--tw-text-opacity));
 }
 
 .hover\:transition:hover {
@@ -813,6 +1019,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 0px) {
+  .celular\:flex {
+    display: flex;
+  }
+
   .celular\:hidden {
     display: none;
   }
@@ -821,12 +1031,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 100%;
   }
 
-  .celular\:w-2\/4 {
-    width: 50%;
-  }
-
   .celular\:justify-center {
     justify-content: center;
+  }
+
+  .celular\:gap-10 {
+    gap: 2.5rem;
   }
 
   .celular\:p-0 {
@@ -843,20 +1053,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 740px) {
-  .tablet\:block {
-    display: block;
-  }
-
   .tablet\:flex {
     display: flex;
+  }
+
+  .tablet\:hidden {
+    display: none;
   }
 
   .tablet\:w-2\/4 {
     width: 50%;
   }
 
-  .tablet\:justify-between {
-    justify-content: space-between;
+  .tablet\:justify-center {
+    justify-content: center;
   }
 }
 
@@ -869,14 +1079,67 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 75%;
   }
 
+  @-webkit-keyframes heroImgAnimate {
+    0% {
+      transform: translateX(-200%);
+      opacity: 0;
+    }
+
+    50% {
+      opacity: .5;
+    }
+
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  @keyframes heroImgAnimate {
+    0% {
+      transform: translateX(-200%);
+      opacity: 0;
+    }
+
+    50% {
+      opacity: .5;
+    }
+
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  .laptop\:animate-\[heroImgAnimate_1s_ease\] {
+    -webkit-animation: heroImgAnimate 1s ease;
+            animation: heroImgAnimate 1s ease;
+  }
+
   .laptop\:text-\[3em\] {
     font-size: 3em;
   }
 }
 
 @media (min-width: 1024px) {
+  .desktop\:inline-block {
+    display: inline-block;
+  }
+
+  .desktop\:w-\[30\%\] {
+    width: 30%;
+  }
+
   .desktop\:w-2\/4 {
     width: 50%;
+  }
+
+  .desktop\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  .desktop\:gap-\[15em\] {
+    gap: 15em;
   }
 
   .desktop\:text-hero {
