@@ -18,7 +18,8 @@ module.exports = {
       animation: {
         heroImgAnimate: 'heroImgAnimate 1s ease',
         heroApAnimate: 'heroApAnimate 1s ease',
-        servicosAnimate: 'heroImgAnimate 1s ease'
+        servicosAnimate: 'heroImgAnimate 1s ease',
+        buttonAnimate: 'buttonAnimate .5s ease'
       },
     },
     fontFamily: {

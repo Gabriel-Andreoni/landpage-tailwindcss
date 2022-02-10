@@ -548,10 +548,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
-.h-\[350px\] {
-  height: 350px;
-}
-
 .h-screen {
   height: 100vh;
 }
@@ -560,24 +556,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 370px;
 }
 
-.h-\[\] {
-  height: ;
-}
-
-.h-\[100\%\] {
-  height: 100%;
-}
-
 .w-full {
   width: 100%;
 }
 
 .w-3\/5 {
   width: 60%;
-}
-
-.w-\[25\%\] {
-  width: 25%;
 }
 
 .w-\[50\%\] {
@@ -658,11 +642,6 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: heroApAnimate 1s ease;
 }
 
-.animate-\[servicosAnimate_1s_ease\] {
-  -webkit-animation: servicosAnimate 1s ease;
-          animation: servicosAnimate 1s ease;
-}
-
 @keyframes heroImgAnimate {
   0% {
     transform: translateX(-200%);
@@ -679,9 +658,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.animate-\[heroImgAnimate_2s_ease\] {
-  -webkit-animation: heroImgAnimate 2s ease;
-          animation: heroImgAnimate 2s ease;
+.animate-\[heroImgAnimate_\.5s_ease\] {
+  -webkit-animation: heroImgAnimate .5s ease;
+          animation: heroImgAnimate .5s ease;
 }
 
 @keyframes heroImgAnimate {
@@ -721,51 +700,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.animate-\[heroImgAnimate_2\.5s_ease\] {
-  -webkit-animation: heroImgAnimate 2.5s ease;
-          animation: heroImgAnimate 2.5s ease;
-}
-
-@keyframes heroImgAnimate {
-  0% {
-    transform: translateX(-200%);
-    opacity: 0;
-  }
-
-  50% {
-    opacity: .5;
-  }
-
-  100% {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-
-.animate-\[heroImgAnimate_\.5s_ease\] {
-  -webkit-animation: heroImgAnimate .5s ease;
-          animation: heroImgAnimate .5s ease;
-}
-
-@keyframes heroImgAnimate {
-  0% {
-    transform: translateX(-200%);
-    opacity: 0;
-  }
-
-  50% {
-    opacity: .5;
-  }
-
-  100% {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-
-.animate-\[heroImgAnimate_1\.s_ease\] {
-  -webkit-animation: heroImgAnimate 1.s ease;
-          animation: heroImgAnimate 1.s ease;
+.animate-\[heroImgAnimate_2s_ease\] {
+  -webkit-animation: heroImgAnimate 2s ease;
+          animation: heroImgAnimate 2s ease;
 }
 
 .cursor-pointer {
@@ -792,10 +729,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
-.gap-20 {
-  gap: 5rem;
-}
-
 .gap-2 {
   gap: 0.5rem;
 }
@@ -808,28 +741,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-\[2px\] {
   border-width: 2px;
 }
 
-.border-\[px\] {
-  border-width: px;
+.border-t-8 {
+  border-top-width: 8px;
 }
 
 .border-b-2 {
   border-bottom-width: 2px;
 }
 
-.border-t {
-  border-top-width: 1px;
+.border-l-\[2px\] {
+  border-left-width: 2px;
 }
 
-.border-t-8 {
-  border-top-width: 8px;
+.border-l-\[8px\] {
+  border-left-width: 8px;
 }
 
 .border-sky-400 {
@@ -859,6 +788,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[url\(\'\.\.\/images\/background-hero\.png\'\)\] {
   background-image: url('../images/background-hero.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/background-servi\E7os\.png\'\)\] {
+  background-image: url('../images/background-serviços.png');
 }
 
 .p-8 {
@@ -899,6 +832,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -919,6 +856,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.5em;
 }
 
+.text-\[3em\] {
+  font-size: 3em;
+}
+
 .text-\[1\.4em\] {
   font-size: 1.4em;
 }
@@ -927,8 +868,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.1em;
 }
 
-.text-\[3em\] {
-  font-size: 3em;
+.text-\[1\.3em\] {
+  font-size: 1.3em;
 }
 
 .text-slate-900 {
@@ -944,12 +885,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-slate-50 {
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity));
-}
-
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-xl {
@@ -1018,48 +953,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(56 189 248 / var(--tw-bg-opacity));
 }
 
-.hover\:translate-x-4:hover {
-  --tw-translate-x: 1rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:translate-y-4:hover {
-  --tw-translate-y: 1rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:translate-y-\[\]:hover {
-  --tw-translate-y: ;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:translate-y-\[1\%\]:hover {
-  --tw-translate-y: 1%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:translate-y-\[\.5\%\]:hover {
-  --tw-translate-y: .5%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:translate-y-\[\.5em\]:hover {
-  --tw-translate-y: .5em;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:translate-y-\[\.1em\]:hover {
-  --tw-translate-y: .1em;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:translate-y-\[\.2em\]:hover {
-  --tw-translate-y: .2em;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:translate-y-\[\.3em\]:hover {
   --tw-translate-y: .3em;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:translate-y-\[-\.3em\]:hover {
+  --tw-translate-y: -.3em;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1072,6 +972,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:animate-pulse:hover {
   -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.hover\:animate-\[buttonAnimate_1s_ease\]:hover {
+  -webkit-animation: buttonAnimate 1s ease;
+          animation: buttonAnimate 1s ease;
 }
 
 .hover\:border-\[1px\]:hover {
@@ -1136,20 +1041,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
-  .celular\:h-full {
-    height: 100%;
-  }
-
-  .celular\:h-\[\] {
-    height: ;
-  }
-
   .celular\:h-\[100\%\] {
     height: 100%;
-  }
-
-  .celular\:h-screen {
-    height: 100vh;
   }
 
   .celular\:w-full {
@@ -1160,24 +1053,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 100%;
   }
 
-  .celular\:flex-row {
-    flex-direction: row;
-  }
-
   .celular\:flex-col {
     flex-direction: column;
   }
 
   .celular\:justify-center {
     justify-content: center;
-  }
-
-  .celular\:gap-10 {
-    gap: 2.5rem;
-  }
-
-  .celular\:gap-4 {
-    gap: 1rem;
   }
 
   .celular\:gap-2 {
@@ -1295,20 +1176,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: space-evenly;
   }
 
-  .desktop\:gap-\[15em\] {
-    gap: 15em;
-  }
-
-  .desktop\:gap-20 {
-    gap: 5rem;
+  .desktop\:gap-\[10em\] {
+    gap: 10em;
   }
 
   .desktop\:gap-10 {
     gap: 2.5rem;
-  }
-
-  .desktop\:gap-\[10em\] {
-    gap: 10em;
   }
 
   .desktop\:text-hero {
