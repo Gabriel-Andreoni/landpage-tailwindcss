@@ -516,10 +516,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 5em;
 }
 
-.mt-\[3\.3em\] {
-  margin-top: 3.3em;
-}
-
 .mt-\[1\.7em\] {
   margin-top: 1.7em;
 }
@@ -741,24 +737,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
-.border-\[2px\] {
-  border-width: 2px;
-}
-
-.border-t-8 {
-  border-top-width: 8px;
+.border-l-\[8px\] {
+  border-left-width: 8px;
 }
 
 .border-b-2 {
   border-bottom-width: 2px;
-}
-
-.border-l-\[2px\] {
-  border-left-width: 2px;
-}
-
-.border-l-\[8px\] {
-  border-left-width: 8px;
 }
 
 .border-sky-400 {
@@ -794,6 +778,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('../images/background-serviços.png');
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-repeat {
+  background-repeat: repeat;
+}
+
 .p-8 {
   padding: 2rem;
 }
@@ -826,14 +834,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-4 {
   padding-left: 1rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
 }
 
 .text-center {
@@ -953,11 +953,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(56 189 248 / var(--tw-bg-opacity));
 }
 
-.hover\:translate-y-\[\.3em\]:hover {
-  --tw-translate-y: .3em;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:translate-y-\[-\.3em\]:hover {
   --tw-translate-y: -.3em;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -972,11 +967,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:animate-pulse:hover {
   -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-.hover\:animate-\[buttonAnimate_1s_ease\]:hover {
-  -webkit-animation: buttonAnimate 1s ease;
-          animation: buttonAnimate 1s ease;
 }
 
 .hover\:border-\[1px\]:hover {
@@ -1017,12 +1007,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.hover\:transition-all:hover {
-  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }

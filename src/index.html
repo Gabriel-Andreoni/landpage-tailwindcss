@@ -18,7 +18,7 @@
     <title>Document</title>
 </head>
 
-<body class="grid grid-cols-3 grid-row[150px auto auto] bg-slate-100">
+<body class="grid grid-cols-3 grid-row[150px auto auto] bg-slate-100 bg-[url('../images/background-hero.png')] bg-fixed bg-top bg-cover">
     <header
         class="col-start-1 col-end-4 w-full h-[150px] flex items-center animate-[heroImgAnimate_1s_ease] desktop:justify-evenly desktop:gap-[10em]">
         <img class="celular:hidden tablet:hidden laptop:block laptop:animate-[heroImgAnimate_1s_ease]"
@@ -54,7 +54,7 @@
     </header>
 
     <main class="col-start-1 col-end-4 h-auto">
-        <div class="flex bg-[url('../images/background-hero.png')]">
+        <div class="flex">
             <section class="w-3/5 h-full flex-col justify-center items-center celular:hidden tablet:flex">
                 <img class="animate-[heroImgAnimate_1s_ease]" src="../images/hero-img.png" alt="imagem de apresentação"
                     width="600">
@@ -72,76 +72,7 @@
             </section>
         </div>
 
-        <div class="w-full h-screen flex flex-col flex-wrap justify-center bg-slate-50 bg-[url('../images/background-serviços.png')] celular:h-[100%] desktop:h-screen" id="servicos">
-            <section>
-                <h1 class="text-center font-fontHeroLight text-[3em] text-sky-400">
-                    Serviços Oferecidos pela Exitus
-                </h1>
-            </section>
-
-            <section class="flex celular:flex-col desktop:flex-row gap-2 p-8">
-                <div class="h-[370px] m-auto border-sky-400 border-l-[8px] rounded-[.25em] animate-[heroImgAnimate_.5s_ease] shadow-xl hover:shadow-none hover:translate-y-[-.3em] duration-300 celular:w-full desktop:w-[25%]">
-                    <section class="p-4">
-                        <img class="" src="../images/pessoal-img.png" alt="">
-
-                        <h1 class="font-fontHeroLight text-[1.4em] border-b-2 border-sky-400">Departamento Pessoal</h1>
-                    </section>
-
-                    <section class="">
-                        <p class="pl-4 font-fontHeroLight text-[1.1em]">Departamento responsável pela gestão dos funcionários</p>
-                        <button class="w-[50%] p-[.6em] border-[1px] border-sky-400 rounded-[.25em] relative left-[45%] mt-[5em] hover:bg-sky-400 hover:text-slate-50 hover:transition duration-300">
-                            Saiba Mais
-                        </button>
-                    </section>
-                </div>
-
-                <div class="celular:w-[100%] desktop:w-[25%] h-[370px]  m-auto border-sky-400 border-l-[8px] rounded-[.25em] animate-[heroImgAnimate_1s_ease] shadow-xl hover:shadow-none hover:translate-y-[-.3em] duration-300">
-                    <section class="p-4">
-                        <img src="../images/adm-img.png" alt="">
-
-                        <h1 class="font-fontHeroLight text-[1.3em] border-b-2 border-sky-400">Departamento Administrativo</h1>
-                    </section>
-
-                    <section class="h-auto">
-                        <p class="pl-4 font-fontHeroLight text-[1.1em]">Departamento que abrange todos os profissionais responsáveis da empresa.</p>
-                        <button class="w-[50%] p-[.6em] border-[1px] border-sky-400 rounded-[.25em] relative left-[40%] mt-[5em] hover:bg-sky-400 hover:text-slate-50 hover:transition duration-300">
-                            Saiba Mais
-                        </button>
-                    </section>
-                </div>
-
-                <div
-                    class="celular:w-[100%] desktop:w-[25%] h-[370px]  m-auto flex flex-col border-sky-400 border-l-[8px] rounded-[.25em] animate-[heroImgAnimate_1.5s_ease] shadow-xl hover:shadow-none hover:translate-y-[-.3em] duration-300">
-                    <section class="p-4">
-                        <img src="../images/contabilidade-img.png" alt="">
-
-                        <h1 class="font-fontHeroLight text-[1.4em] border-b-2 border-sky-400">Departamento Contabilidade</h1>
-                    </section>
-
-                    <section class="h-auto">
-                        <p class="pl-4 font-fontHeroLight text-[1.1em]">Departamento responsável pelo registro e avaliação das informações econômicas e financeiras de sua empresa.</p>
-                        <button class="w-[50%] p-[.6em] border-[1px] border-sky-400 rounded-[.25em] relative left-[40%] mt-[1.7em] hover:bg-sky-400 hover:text-slate-50 hover:transition duration-300">
-                            Saiba Mais
-                        </button>
-                    </section>
-                </div>
-
-                <div class="celular:w-[100%] desktop:w-[25%] h-[370px]  m-auto border-sky-400 border-l-[8px] rounded-[.25em] animate-[heroImgAnimate_2s_ease] shadow-xl hover:shadow-none hover:translate-y-[-.3em] duration-300">
-                    <section class="p-4">
-                        <img src="../images/fiscal-img.png" alt="">
-
-                        <h1 class="font-fontHeroLight text-[1.4em] border-b-2 border-sky-400">Departamento Fiscal</h1>
-                    </section>
-
-                    <section class="h-auto">
-                        <p class="pl-4 font-fontHeroLight text-[1.1em]">Setor responsável por fazer a escrituração de todas as movimentações, apurar impostos e garantir que todas as obrigações legais estão sendo cumpridas</p>
-                        <button class="w-[50%] p-[.6em] border-[1px] border-sky-400 rounded-[.25em] relative left-[40%] hover:bg-sky-400 hover:text-slate-50 hover:transition duration-300">
-                            Saiba Mais
-                        </button>
-                    </section>
-                </div>
-            </section>
-        </div>
+        
     </main>
 
     <footer class="col-start-1 col-end-4 h-full bg-slate-400">
