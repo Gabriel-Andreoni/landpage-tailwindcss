@@ -1265,6 +1265,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 100%;
   }
 
+  .celular\:flex-none {
+    flex: none;
+  }
+
   .celular\:flex-col {
     flex-direction: column;
   }
@@ -1275,6 +1279,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .celular\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .celular\:bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   }
 
   .celular\:p-0 {
