@@ -20,7 +20,7 @@
 
 <body class="grid grid-cols-3 grid-row[150px auto auto] bg-slate-100 bg-[url('../images/background-hero.png')] bg-fixed bg-top bg-cover">
     <header
-        class="col-start-1 col-end-4 w-full h-[150px] flex items-center animate-[heroImgAnimate_1s_ease] desktop:justify-evenly desktop:gap-[10em]">
+        class="col-start-1 col-end-4 w-full h-[150px] flex items-center animate-[heroImgAnimate_1s_ease] desktop:justify-evenly desktop:gap-[10em]" id="home">
         <img class="celular:hidden tablet:hidden laptop:block laptop:animate-[heroImgAnimate_1s_ease]"
             src="../images/logo.png" alt="logo da empresa" width="300">
         <nav
@@ -28,20 +28,20 @@
             <ul class="flex celular:gap-2 desktop:gap-10  tablet:flex tablet:justify-center">
                 <li
                     class="font-fontHeroLight text-[1.8em] text-slate-900 relative after:block after:contetn-[''] after:absolute after:w-full after:h-2 after:bg-sky-400 after:rounded-[.25em] cursor-pointer after:animate-pulse">
-                    <a href="#">Home</a>
+                    <a href="#home" class="">Home</a>
+                </li>
+                <li
+                    class="font-fontHeroLight text-[1.8em] text-slate-900 relative after:block after:contetn-[''] after:absolute after:w-full after:h-2 after:bg-sky-400 after:rounded-[.25em] after:invisible hover:after:visible hover:animate-pulse cursor-pointer ">
+                    <a href="#empresa">Empresa</a>
                 </li>
                 <li
                     class="font-fontHeroLight text-[1.8em] text-slate-900 relative after:block after:contetn-[''] after:absolute after:w-full after:h-2 after:bg-sky-400 after:rounded-[.25em] after:invisible hover:after:visible hover:animate-pulse cursor-pointer ">
                     <a href="#servicos">Serviços</a>
                 </li>
-                <li
-                    class="font-fontHeroLight text-[1.8em] text-slate-900 relative after:block after:contetn-[''] after:absolute after:w-full after:h-2 after:bg-sky-400 after:rounded-[.25em] after:invisible hover:after:visible hover:animate-pulse cursor-pointer ">
-                    <a href="">Empresa</a>
-                </li>
 
                 <li
                     class="font-fontHeroLight text-[1.8em] text-slate-900 relative after:block after:contetn-[''] after:absolute after:w-full after:h-2 after:bg-sky-400 after:rounded-[.25em] after:invisible hover:after:visible hover:animate-pulse cursor-pointer ">
-                    <a href="">Contato</a>
+                    <a href="#serviços">Contato</a>
                 </li>
             </ul>
         </nav>
@@ -68,11 +68,152 @@
                     class="font-fontHeroLight  text-slate-900 text-center animate-[heroApAnimate_1s_ease] celular:text-[1.3em] desktop:text-[1.6em]">
                     Assessoria Empresarial, Jurídica, Tributária e Contabilidade</h2>
                 <button
-                    class="border-[1px] bg-sky-400 mt-8 py-4 px-8 font-fontHeroLight text-[1.8em] text-slate-50 rounded-[.25em] hover:border-[1px] hover:border-sky-400 hover:bg-transparent hover:text-slate-900 hover:transition duration-300 animate-[heroApAnimate_1s_ease] celular:w-full tablet:w-2/4 laptop:w-3/4 desktop:w-2/4">Conheça-nos</button>
+                    class="border-[1px] bg-sky-400 mt-8 py-4 px-8 font-fontHeroLight text-[1.8em] text-slate-50 rounded-[.25em] hover:border-[1px] hover:border-sky-400 hover:bg-transparent hover:text-slate-900 hover:transition duration-300 animate-[heroApAnimate_1s_ease] celular:w-full tablet:w-2/4 laptop:w-3/4 desktop:w-2/4">
+                    <a href="#empresa">Conheça-nos</a>
+                </button>
             </section>
         </div>
 
-        
+        <div class="w-full h-screen flex" id="empresa">
+            <section class="w-[60%] flex flex-col justify-center">
+                <h2 class="text-center font-fontHeroLight text-[4em]">
+                    <span class="bg-sky-400 text-slate-50 p-2 rounded-[.25em]">Sobre</span>
+                     a Exitus
+                </h2>
+                <p class="p-4 text-center font-fontHeroLight text-[1.2em] leading-8">Fundada em 2000, a Exitus Assessoria Empresarial é uma empresa sólida e moderna, focada no cliente e com uma expressiva atuação no mercado contábil-financeiro.
+ 
+                    Oferece soluções de confiança para sua empresa nos departamentos Contábil, Fiscal, Consultoria, Pessoal, Societário e Pessoa Física.
+                     
+                    Objetivando o perfeito equilíbrio administrativo contábil e financeiro de sua empresa, nossos profissionais estão em constante reciclagem e aprendizado, buscando informação, integração organizacional e visão estratégica para melhor tomada de decisão em favor de nossos clientes, atuando de forma ética e responsável para garantir agilidade e o melhor resultado em nossos serviços.</p>
+                
+                <span>
+                    <a class="inline-block" href="#servicos">
+                        <img class="mt-[1em] ml-[1em]" src="../images/seta.png" alt="icone de navegação" width="100">
+                    </a>
+                </span>
+            </section>
+            <section class="w-[40%]">
+                <img src="../images/empresa-img.png" alt="imagem ilustrando os participantes da empresa" width="600">
+            </section>
+        </div>
+
+        <div class="w-full h-screen flex flex-col flex-wrap justify-center desktop:h-screen" id="servicos">
+            <section>
+                <h1 class="text-center font-fontHeroLight text-[3em]">
+                    <span class="bg-sky-400 text-slate-50 p-2 rounded-[.25em]">Serviços</span>
+                     Oferecidos pela Exitus
+                </h1>
+            </section>
+
+            <section class="flex celular:flex-col desktop:flex-row gap-2 p-8">
+                <div class="h-[370px] m-auto border-sky-400 border-l-[8px] rounded-[.25em] animate-[heroImgAnimate_.5s_ease] shadow-xl hover:shadow-none hover:translate-y-[-.3em] duration-300 celular:w-full desktop:w-[25%]">
+                    <section class="p-4">
+                        <img class="" src="../images/pessoal-img.png" alt="">
+
+                        <h1 class="font-fontHeroLight text-[1.4em] border-b-2 border-sky-400">Departamento Pessoal</h1>
+                    </section>
+
+                    <section class="">
+                        <p class="pl-4 font-fontHeroLight text-[1.1em]">Departamento responsável pela gestão dos funcionários</p>
+                        <button class="w-[50%] p-[.6em] border-[1px] border-sky-400 rounded-[.25em] relative left-[45%] mt-[5em] hover:bg-sky-400 hover:text-slate-50 hover:transition duration-300">
+                            Saiba Mais
+                        </button>
+                    </section>
+                </div>
+
+                <div class="celular:w-[100%] desktop:w-[25%] h-[370px]  m-auto border-sky-400 border-l-[8px] rounded-[.25em] animate-[heroImgAnimate_1s_ease] shadow-xl hover:shadow-none hover:translate-y-[-.3em] duration-300">
+                    <section class="p-4">
+                        <img src="../images/adm-img.png" alt="">
+
+                        <h1 class="font-fontHeroLight text-[1.3em] border-b-2 border-sky-400">Departamento Administrativo</h1>
+                    </section>
+
+                    <section class="h-auto">
+                        <p class="pl-4 font-fontHeroLight text-[1.1em]">Departamento que abrange todos os profissionais responsáveis da empresa.</p>
+                        <button class="w-[50%] p-[.6em] border-[1px] border-sky-400 rounded-[.25em] relative left-[40%] mt-[5em] hover:bg-sky-400 hover:text-slate-50 hover:transition duration-300">
+                            Saiba Mais
+                        </button>
+                    </section>
+                </div>
+
+                <div
+                    class="celular:w-[100%] desktop:w-[25%] h-[370px]  m-auto flex flex-col border-sky-400 border-l-[8px] rounded-[.25em] animate-[heroImgAnimate_1.5s_ease] shadow-xl hover:shadow-none hover:translate-y-[-.3em] duration-300">
+                    <section class="p-4">
+                        <img src="../images/contabilidade-img.png" alt="">
+
+                        <h1 class="font-fontHeroLight text-[1.4em] border-b-2 border-sky-400">Departamento Contabilidade</h1>
+                    </section>
+
+                    <section class="h-auto">
+                        <p class="pl-4 font-fontHeroLight text-[1.1em]">Departamento responsável pelo registro e avaliação das informações econômicas e financeiras de sua empresa.</p>
+                        <button class="w-[50%] p-[.6em] border-[1px] border-sky-400 rounded-[.25em] relative left-[40%] mt-[1.7em] hover:bg-sky-400 hover:text-slate-50 hover:transition duration-300">
+                            Saiba Mais
+                        </button>
+                    </section>
+                </div>
+
+                <div class="celular:w-[100%] desktop:w-[25%] h-[370px]  m-auto border-sky-400 border-l-[8px] rounded-[.25em] animate-[heroImgAnimate_2s_ease] shadow-xl hover:shadow-none hover:translate-y-[-.3em] duration-300">
+                    <section class="p-4">
+                        <img src="../images/fiscal-img.png" alt="">
+
+                        <h1 class="font-fontHeroLight text-[1.4em] border-b-2 border-sky-400">Departamento Fiscal</h1>
+                    </section>
+
+                    <section class="h-auto">
+                        <p class="pl-4 font-fontHeroLight text-[1.1em]">Setor responsável por fazer a escrituração de todas as movimentações, apurar impostos e garantir que todas as obrigações legais estão sendo cumpridas</p>
+                        <button class="w-[50%] p-[.6em] border-[1px] border-sky-400 rounded-[.25em] relative left-[40%] hover:bg-sky-400 hover:text-slate-50 hover:transition duration-300">
+                            Saiba Mais
+                        </button>
+                    </section>
+                </div>
+            </section>
+
+            <span>
+                <a class="inline-block" href="#contato">
+                    <img class="mt-[1em] ml-[1em]" src="../images/seta.png" alt="icone de navegação" width="100">
+                </a>
+            </span>
+        </div>
+
+        <div class="w-full h-screen flex" id="contato">
+           <section class="flex flex-col w-[40%]">
+                <img src="../images/contato-img.png" alt="imagem de contato" width="600">
+
+                <a href="#home">
+                    <img class="mt-[1em] ml-[1em]" src="../images/seta-up.png" alt="" width="100">
+                </a>
+           </section>
+           <section class="w-[60%] flex flex-col justify-center items-center">
+               <h2 class="font-fontHeroLight text-[3em]">Ente em
+                <span class="bg-sky-400 text-slate-50 p-2 rounded-[.25em]">Contato</span> 
+                    conosco</h2>
+               <form class="w-full p-4" action="">
+                   <div class="">
+                       <label class="font-fontHeroLight text-[1.3em]" for="nome">Nome</label>
+                       <input class="w-full outline-none bg-transparent border-b-2 border-sky-400" type="text" id="nome" required>
+                   </div>
+
+                   <div class="">
+                    <label class="font-fontHeroLight text-[1.3em]" for="nome">Sobrenome</label>
+                    <input class="w-full outline-none bg-transparent border-b-2 border-sky-400" type="text" id="nome" required>
+                </div>
+
+                <div class="">
+                    <label class="font-fontHeroLight text-[1.3em]" for="nome">E-mail</label>
+                    <input class="w-full outline-none bg-transparent border-b-2 border-sky-400" type="email" id="nome" required>
+                </div>
+
+                <div class="">
+                    <label class="font-fontHeroLight text-[1.3em]" for="nome">Mesagem</label>
+                    <textarea class="w-full outline-none bg-transparent border-b-2 border-sky-400 resize-none" name="" id="" cols="30" rows="10" required></textarea>
+                </div>
+
+                <button class="w-80 mt-4 p-4 border-2 border-sky-400 text-[1.3em] font-fontHeroLight hover:bg-sky-400 hover:text-white hover:transition-all duration-300">
+                    Enviar
+                </button>
+               </form>
+           </section> 
+        </div>
     </main>
 
     <footer class="col-start-1 col-end-4 h-full bg-slate-400">
