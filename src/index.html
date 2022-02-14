@@ -59,7 +59,7 @@
                 <img class="animate-[heroImgAnimate_1s_ease]" src="../images/hero-img.png" alt="imagem de apresentação"
                     width="600">
             </section>
-            <section class="w-3/5 h-full flex flex-col justify-center items-center p-8 celular:p-0 celular:w-full celular:mt-[0]">
+            <section class="w-3/5 h-full flex flex-col justify-center items-center p-8 celular:p-0 celular:w-full celular:mt-[-6em]">
                 <h1
                     class="inline-block font-fontHero text-center  text-slate-900 mb-10 animate-[heroApAnimate_1s_ease] celular:text-[2.5em] laptop:text-[3em] desktop:text-hero">
                     <span class="bg-sky-400 text-slate-50 p-2 rounded-[.25em]">Exitus</span> Assessoria Contábil
@@ -68,7 +68,7 @@
                     class="font-fontHeroLight  text-slate-900 text-center animate-[heroApAnimate_1s_ease] celular:text-[1.3em] desktop:text-[1.6em]">
                     Assessoria Empresarial, Jurídica, Tributária e Contabilidade</h2>
                 <button
-                    class="border-[1px] bg-sky-400 mt-8 py-4 px-8 font-fontHeroLight text-[1.8em] text-slate-50 rounded-[.25em] hover:border-[1px] hover:border-sky-400 hover:bg-transparent hover:text-slate-900 hover:transition duration-300 animate-[heroApAnimate_1s_ease] celular:w-full tablet:w-2/4 laptop:w-3/4 desktop:w-2/4">
+                    class="border-[1px] bg-sky-400 mt-8 py-4 px-8 font-fontHeroLight text-[1.8em] text-slate-50 rounded-[.25em] hover:border-[1px] hover:border-sky-400 hover:bg-transparent hover:text-slate-900 hover:transition duration-300 animate-[heroApAnimate_1s_ease] celular:w-[90%] tablet:w-2/4 laptop:w-3/4 desktop:w-2/4">
                     <a href="#empresa">Conheça-nos</a>
                 </button>
             </section>
@@ -80,13 +80,13 @@
                     <span class="bg-sky-400 text-slate-50 p-2 rounded-[.25em]">Sobre</span>
                      a Exitus
                 </h2>
-                <p class="p-4 text-center font-fontHeroLight text-[1.2em] leading-8">Fundada em 2000, a Exitus Assessoria Empresarial é uma empresa sólida e moderna, focada no cliente e com uma expressiva atuação no mercado contábil-financeiro.
+                <p class="p-4 text-center font-fontHeroLight text-[1.2em] leading-8 celular:text-justify">Fundada em 2000, a Exitus Assessoria Empresarial é uma empresa sólida e moderna, focada no cliente e com uma expressiva atuação no mercado contábil-financeiro.
  
                     Oferece soluções de confiança para sua empresa nos departamentos Contábil, Fiscal, Consultoria, Pessoal, Societário e Pessoa Física.
                      
                     Objetivando o perfeito equilíbrio administrativo contábil e financeiro de sua empresa, nossos profissionais estão em constante reciclagem e aprendizado, buscando informação, integração organizacional e visão estratégica para melhor tomada de decisão em favor de nossos clientes, atuando de forma ética e responsável para garantir agilidade e o melhor resultado em nossos serviços.</p>
                 
-                <span class="animate-bounce">
+                <span class="animate-bounce celular:hidden desktop:inline-block">
                     <a class="inline-block" href="#servicos">
                         <img class="mt-[1em] ml-[1em]" src="../images/seta.png" alt="icone de navegação" width="100">
                     </a>
@@ -168,18 +168,18 @@
                 </div>
             </section>
 
-            <span class="animate-bounce">
+            <span class="animate-bounce celular:hidden desktop:inline-block">
                 <a class="inline-block" href="#contato">
                     <img class="mt-[1em] ml-[1em]" src="../images/seta.png" alt="icone de navegação" width="100">
                 </a>
             </span>
         </div>
 
-        <div class="w-full h-screen flex" id="contato">
+        <div class="w-full h-screen flex celular:h-auto" id="contato">
            <section class="flex flex-col w-[40%] celular:hidden desktop:flex">
                 <img src="../images/contato-img.png" alt="imagem de contato" width="600">
 
-                <a class="inline-block animate-bounce" href="#home">
+                <a class="inline-block animate-bounce celular:hidden desktop:inline-block" href="#home">
                     <img class="mt-[1em] ml-[1em]" src="../images/seta-up.png" alt="" width="100">
                 </a>
            </section>
@@ -187,7 +187,7 @@
                <h2 class="font-fontHeroLight text-[3em]">Ente em
                 <span class="bg-sky-400 text-slate-50 p-2 rounded-[.25em]">Contato</span> 
                     conosco</h2>
-               <form class="w-full p-4" action="">
+               <form class="w-full p-4 celular:p-0 celular:h-screen" action="">
                    <div class="">
                        <label class="font-fontHeroLight text-[1.3em]" for="nome">Nome</label>
                        <input class="w-full outline-none bg-transparent border-b-2 border-sky-400" type="text" id="nome" required>
@@ -208,7 +208,7 @@
                     <textarea class="w-full outline-none bg-transparent border-b-2 border-sky-400 resize-none" name="" id="" cols="30" rows="10" required></textarea>
                 </div>
 
-                <button class="w-80 mt-4 p-4 border-2 border-sky-400 text-[1.3em] font-fontHeroLight hover:bg-sky-400 hover:text-white hover:transition-all duration-300">
+                <button class="w-80 mt-4 p-4 border-2 border-sky-400 text-[1.3em] font-fontHeroLight hover:bg-sky-400 hover:text-white hover:transition-all duration-300 celular:w-[90%] celular:m-[auto] celular:block celular:mt-4">
                     Enviar
                 </button>
                </form>
