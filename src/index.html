@@ -55,7 +55,7 @@
 
     <main class="col-start-1 col-end-4 h-auto">
         <div class="flex celular:h-screen">
-            <section class="w-3/5 h-full flex-col justify-center items-center celular:hidden tablet:flex">
+            <section class="w-3/5 h-full flex-col items-center celular:hidden tablet:flex">
                 <img class="animate-[heroImgAnimate_1s_ease]" src="../images/hero-img.png" alt="imagem de apresentação"
                     width="600">
             </section>
@@ -74,7 +74,7 @@
             </section>
         </div>
 
-        <div class="w-full h-screen flex flex-wrap celular:h-auto" id="empresa">
+        <div class="w-full h-screen flex flex-wrap celular:h-auto celular:pt-[1em]" id="empresa">
             <section class="flex flex-col justify-center celular:w-[100%] desktop:w-[60%]">
                 <h2 class="text-center font-fontHeroLight text-[4em] celular:text-[2.5em] laptop:text-[3em] desktop:text-hero">
                     <span class="bg-sky-400 text-slate-50 p-2 rounded-[.25em]">Sobre</span>
@@ -97,9 +97,9 @@
             </section>
         </div>
 
-        <div class="w-full h-screen flex justify-center celular:flex-col celular:h-auto" id="servicos">
+        <div class="w-full h-screen flex justify-center pt-[1em] celular:flex-col celular:h-auto" id="servicos">
             <section>
-                <h1 class="text-center font-fontHeroLight text-[3em] celular:text-[2.5em] laptop:text-[3em]">
+                <h1 class="text-center font-fontHeroLight celular:text-[2.5em] laptop:text-[3em] desktop:text-[5em]">
                     <span class="bg-sky-400 text-slate-50 p-2 rounded-[.25em]">Serviços</span>
                      Oferecidos pela Exitus
                 </h1>
@@ -175,16 +175,16 @@
             </span>
         </div>
 
-        <div class="w-full h-screen flex celular:h-auto" id="contato">
+        <div class="w-full h-screen flex celular:h-auto celular:p-[1em]" id="contato">
            <section class="flex flex-col w-[40%] celular:hidden desktop:flex">
                 <img src="../images/contato-img.png" alt="imagem de contato" width="600">
 
                 <a class="inline-block animate-bounce celular:hidden desktop:inline-block" href="#home">
-                    <img class="mt-[1em] ml-[1em]" src="../images/seta-up.png" alt="" width="100">
+                    <img class="mt-[1em] mla-[1em]" src="../images/seta-up.png" alt="" width="100">
                 </a>
            </section>
-           <section class="w-[60%] flex flex-col justify-center items-center celular:w-[100%]">
-               <h2 class="font-fontHeroLight text-[3em]">Ente em
+           <section class="w-[60%] flex flex-col justify-center items-center celular:w-[100%] desktop:w-[60%]">
+               <h2 class="font-fontHeroLight text-[4em]">Entre em
                 <span class="bg-sky-400 text-slate-50 p-2 rounded-[.25em]">Contato</span> 
                     conosco</h2>
                <form class="w-full p-4 celular:p-0 celular:h-screen" action="">
@@ -208,7 +208,7 @@
                     <textarea class="w-full outline-none bg-transparent border-b-2 border-sky-400 resize-none" name="" id="" cols="30" rows="10" required></textarea>
                 </div>
 
-                <button class="w-80 mt-4 p-4 border-2 border-sky-400 text-[1.3em] font-fontHeroLight hover:bg-sky-400 hover:text-white hover:transition-all duration-300 celular:w-[90%] celular:m-[auto] celular:block celular:mt-4">
+                <button class="w-80 mt-4 p-4 border-2 border-sky-400 text-[1.4em] rounded-[.25em] font-fontHeroLight hover:bg-sky-400 hover:text-white hover:transition-all duration-300 celular:w-[90%] celular:m-[auto] desktop:w-[60%] celular:block celular:mt-4">
                     Enviar
                 </button>
                </form>
