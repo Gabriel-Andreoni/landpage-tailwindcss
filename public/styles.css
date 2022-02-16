@@ -1024,6 +1024,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1em;
 }
 
+.pt-\[8em\] {
+  padding-top: 8em;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1285,6 +1289,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 1rem;
   }
 
+  .celular\:mt-\[1em\] {
+    margin-top: 1em;
+  }
+
+  .celular\:mt-\[4em\] {
+    margin-top: 4em;
+  }
+
+  .celular\:mt-\[3em\] {
+    margin-top: 3em;
+  }
+
+  .celular\:mt-\[\.7em\] {
+    margin-top: .7em;
+  }
+
+  .celular\:mt-\[\.5em\] {
+    margin-top: .5em;
+  }
+
   .celular\:block {
     display: block;
   }
@@ -1349,6 +1373,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 0.5rem;
   }
 
+  .celular\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .celular\:gap-8 {
+    gap: 2rem;
+  }
+
   .celular\:bg-black {
     --tw-bg-opacity: 1;
     background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1366,6 +1398,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-top: 1em;
   }
 
+  .celular\:pt-\[2em\] {
+    padding-top: 2em;
+  }
+
+  .celular\:text-center {
+    text-align: center;
+  }
+
   .celular\:text-justify {
     text-align: justify;
   }
@@ -1376,6 +1416,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .celular\:text-\[1\.3em\] {
     font-size: 1.3em;
+  }
+
+  .celular\:text-\[2em\] {
+    font-size: 2em;
   }
 }
 
@@ -1390,6 +1434,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .tablet\:w-2\/4 {
     width: 50%;
+  }
+
+  .tablet\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .tablet\:justify-center {
@@ -1449,6 +1497,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
+  .desktop\:mt-\[\] {
+    margin-top: ;
+  }
+
+  .desktop\:mt-\[5em\] {
+    margin-top: 5em;
+  }
+
+  .desktop\:mt-\[1\.8em\] {
+    margin-top: 1.8em;
+  }
+
+  .desktop\:mt-\[\.2em\] {
+    margin-top: .2em;
+  }
+
   .desktop\:block {
     display: block;
   }
@@ -1493,6 +1557,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: column;
   }
 
+  .desktop\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .desktop\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .desktop\:justify-evenly {
     justify-content: space-evenly;
   }
@@ -1503,6 +1575,38 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .desktop\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .desktop\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .desktop\:p-\[2em\] {
+    padding: 2em;
+  }
+
+  .desktop\:p-\[1em\] {
+    padding: 1em;
+  }
+
+  .desktop\:pt-\[\] {
+    padding-top: ;
+  }
+
+  .desktop\:pt-\[2em\] {
+    padding-top: 2em;
+  }
+
+  .desktop\:pt-\[1em\] {
+    padding-top: 1em;
+  }
+
+  .desktop\:pt-\[0em\] {
+    padding-top: 0em;
+  }
+
+  .desktop\:pt-\[\.5em\] {
+    padding-top: .5em;
   }
 
   .desktop\:text-hero {
@@ -1519,5 +1623,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .desktop\:text-\[5em\] {
     font-size: 5em;
+  }
+
+  .desktop\:text-\[4em\] {
+    font-size: 4em;
   }
 }
